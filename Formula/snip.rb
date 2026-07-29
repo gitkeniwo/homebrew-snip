@@ -3,6 +3,8 @@ class Snip < Formula
   homepage "https://github.com/gitkeniwo/snip"
   license "MIT"
 
+  # Optional integration with system git for automated backup & history
+  uses_from_macos "git"
   on_macos do
     on_arm do
       url "https://github.com/gitkeniwo/snip/releases/download/v0.1.0/snip-aarch64-apple-darwin.tar.gz"
@@ -30,6 +32,15 @@ class Snip < Formula
   def install
     bin.install "snip"
     generate_completions_from_executable(bin/"snip", "completion")
+  end
+
+  def caveats
+    <<~EOS
+      Optional integrations:
+        - Git: Automated backup & version control (uses system 'git')
+        - Editor: Interactive editing uses $EDITOR, $VISUAL, or 'vi'
+        - VS Code: TUI 'v' shortcut & `snip open` use 'code' CLI (configurable via `snip config set vscode_cmd <cmd>`)
+    EOS
   end
 
   test do
