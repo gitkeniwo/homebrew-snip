@@ -31,6 +31,7 @@ class Snip < Formula
 
   def install
     bin.install "snip"
+    man1.install Dir["man/*.1"]
     generate_completions_from_executable(bin/"snip", "completion")
   end
 
