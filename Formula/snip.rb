@@ -7,25 +7,25 @@ class Snip < Formula
   uses_from_macos "git"
   on_macos do
     on_arm do
-      url "https://github.com/gitkeniwo/snip/releases/download/v0.6.0/snip-aarch64-apple-darwin.tar.gz"
-      sha256 "373b67bb52bc80752a1eb6142549974c7fab69824c9be513194c12785b9d176b"
+      url "https://github.com/gitkeniwo/snip/releases/download/v0.6.1/snip-aarch64-apple-darwin.tar.gz"
+      sha256 "433c6121fd56dad60df47ac225e69a56486c3e20ea245f35469fd312f6f6d75a"
     end
 
     on_intel do
-      url "https://github.com/gitkeniwo/snip/releases/download/v0.6.0/snip-x86_64-apple-darwin.tar.gz"
-      sha256 "7f4164d29dd47fcbf78d59742003da96f8a104d78506e76f78a6f5a3b853f712"
+      url "https://github.com/gitkeniwo/snip/releases/download/v0.6.1/snip-x86_64-apple-darwin.tar.gz"
+      sha256 "4999349e4ef0feef10048e1ee50b3fe11ad3b8d3ffad43584f8b1447cb485b70"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/gitkeniwo/snip/releases/download/v0.6.0/snip-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "e5dbfdd2ca45c6fbf9a0015daf834560c58472d1d28dd99e826b811c6ee84559"
+      url "https://github.com/gitkeniwo/snip/releases/download/v0.6.1/snip-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "815b74a3bda523ab55449afc348eefff38302b93b7933525fd4c97a9d27d7263"
     end
 
     on_intel do
-      url "https://github.com/gitkeniwo/snip/releases/download/v0.6.0/snip-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "93571ef0b61eb53c6e81e47fee811b8a6ba13602319665ed579e34a359fbeb51"
+      url "https://github.com/gitkeniwo/snip/releases/download/v0.6.1/snip-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f0c17664884746ff2595f46425d53b94bea1b8fc1af08897a6de59f5c033ae56"
     end
   end
 
